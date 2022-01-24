@@ -1,0 +1,37 @@
+
+@charset "UTF-8";
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5;
+    padding: 5;
+    background-color: #086A87;
+    overflow-x: hidden;
+}
+
+.cabecalho{
+    font-size: 1.5em;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.interface{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 0.5em;
+}
+    
+.conteudo{
+    background-color: #fff;
+    border-radius: 0.5em;
+
+}
+
+.conteudo details{
+    font-size: 1.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
