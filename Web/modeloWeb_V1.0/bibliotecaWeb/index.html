@@ -7,7 +7,7 @@
     <title>Biblioteca Web</title>
 </head>
 <body>
-    <!--Trabalhanco com Textos-->
+    <!--Trabalhanco com Textos(h)(p)-->
     <details>
         <summary>Trabalhando com textos</summary>
         <div id="textos">
@@ -24,7 +24,7 @@
         </div>
         <br />
     </details>
-    <!--Trabalhanco com Links-->
+    <!--Trabalhanco com Links(a)-->
     <details>
         <summary>Trabalhando com links</summary>
         <div id="links">
@@ -33,19 +33,19 @@
             <a target="_blank" href="https://google.com.br"> Isso é um link mas (atributo de link href=) + eu abro outra pagina (target).</a>
         </div>
     </details>
-    <!--Trabalhanco com Imagens-->
+    <!--Trabalhanco com Imagens(img)-->
     <details>
         <summary>Trabalhando com imagens</summary>
         <div id="imagens">
             <img src="photoExemple.jpeg" width="300" height="160"/>
         </div>
     </details>
-    <!--Trabalhanco com Divs-->
+    <!--Trabalhanco com Divs(div)-->
     <details>
         <summary>Trabalhando com Divs</summary>
         <div>As div´s são declaradas apenas como (div).</div>
     </details>
-    <!--Trabalhanco com Seções-->
+    <!--Trabalhanco com Seções(section)-->
     <details>
         <summary>Trabalhando com Secões</summary>
         <section>
@@ -73,7 +73,7 @@
             </ul>
         </nav>
     </details>
-    <!--Trabalhanco com Header-->
+    <!--Trabalhanco com Cabecalho (header)-->
     <details>
         <summary>Trabalhando com Header</summary>
         
@@ -82,5 +82,109 @@
         </header>
         
     </details>
+    <!--Trabalhanco com Rodapé (footer)-->
+    <details>
+        <summary>Trabalhando com Footer</summary>
+        
+        <footer><p><small>Todos os direitos reservados.</small></p></footer>
+        
+    </details>
+    <!--Trabalhanco com (Videos)-->
+    <details>
+        <summary>Trabalhando com Videos (video)</summary>
+
+        <video width="300" height="200" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Sou navegador não suporta esse video.
+        </video>
+    </details>
+    <!--Trabalhanco com (Audio)-->
+    <details>
+        <summary>Trabalhando com Audios (audio)</summary>
+
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse formato de audio.
+        </audio>
+    </details>
+    <!--Trabalhanco com (Iframe)-->
+    <details>
+        <summary>Trabalhando com Iframe (iframe)</summary>
+        <p>
+        Estou carregando um site dentro desta pagina
+    </p>
+    <br />
+        <iframe width="60%" height="300" src="https://lopesecia.com.br/ajuda"></iframe>
+    </details>
+    <!--Trabalhanco com (Formularios)-->
+    <details>
+        <summary>Trabalhando com Formularios (form)</summary>
+        <form>
+            <input required type="text" placeholder="Digite o seu nome..."/>
+            <br /> <!--tipo texto-->
+            <input required="" type="email" placeholder="Digite o seu e-mail..."/>
+            <br /> <!--tipo email-->
+            <textarea></textarea>
+            <br /> <!--tipo area de texto-->
+            <select>
+                <option>Item 1</option>
+                <option>Item 2</option>
+                <option>Item 3</option>
+            </select>
+            <br /> <!--tipo opcoes-->
+            <label>Opcao1</label>
+            <input name="opcao1" type="radio">
+            <label>Opcao2</label>
+            <input name="opcao2" type="radio">
+            <br /> <!--tipo radio c/label-->
+            <label>1º Opção</label>
+            <input type="checkbox" name="escolha1" value="escolha1" />
+            <label>2º Opção</label>
+            <input type="checkbox" name="escolha2" value="escolha2" />
+            <br /> <!--tipo check box c/label-->
+            <input type="button" value="Apenas um botao">
+            <br /> <!--tipo botão-->
+            <input type="submit" value="Enviar Formulario" />
+            <br /> <!--tipo botão c/ação de envir o formulario-->
+        </form>    
+    </details>
+    <!--Trabalhanco com (Tabelas)-->
+    <details>
+        <summary>Trabalhando com tabelas (table)</summary>
+        <table align="center" width="70%" border="2">
+            <!--Separa por linha-->
+            <tr> 
+                <!--Separa por coluna-->
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Cargo</td>
+            </tr>
+            <tr>
+                <td>Jonatha</td>
+                <td>29</td>
+                <td>Implantador</td>
+            </tr>
+        </table>
+        <br /> <!--Tabela 2 semanticamente correta-->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>IDADE</th>
+                    <th>CARGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>22</td>
+                    <td>Diretora</td>
+                </tr>
+            </tbody>
+        </table> 
+    </details>
+    
 </body>
 </html>
