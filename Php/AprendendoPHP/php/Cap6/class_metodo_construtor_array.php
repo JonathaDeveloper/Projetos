@@ -1,26 +1,35 @@
 <?php
 
-class Carros {
-    private string $nome;
-    private $contem = array();
+class Entree {
+    public $name;
+    public $ingredients = array();
 
-    function __construct($nome, $contem){
-        if (! is_array($contem)) {
-            throw new Exception("Erro: $contem deve ser um array");
+    public function __construct($name, $ingredients) {
+        if (! is_array($ingredients) ){
+            throw new Exception('$ingredients deve está como um array');
         }
-        $this->nome = $nome;
-        $this->contem = $contem;
+        $this->name = $name;
+        $this->ingredients = $ingredients;
     }
 
-    public function cad($caracteristicas){
-        return in_array($caracteristicas, $this->contem);
+    public function hasIngredients($ingredients){
+        return in_array($ingredients, $this->ingredients);
     }
 }
 
-$carro1 = new Carros('Gol', array('Vermelho', 'Arcondicionado', 'Vidroeletrico'));
+$soup = new Entree('Chicken Soap', array('chicken','water'));
 
-echo($carro1->cad('Vermelho'));
+foreach($soup->ingredients as $i){
+    print "($soup->name)$i \n";
+}
 
-foreach($carro1->contem as $i){
-    print "($carro1->nome)$i \n";
+echo("\n ----------- \n\n");
+
+try {
+    $sandwich = new Entree('Chicken Sandwich', 'googd');
+    foreach($sandwich->ingredients as $i){
+        print "($sandwich->name)$i \n";
+    }
+} catch (Exception $e){
+    return "Couldnt create the drink: " . $e->getMenssage();
 }
