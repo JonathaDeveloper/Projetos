@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Web</title>
+</head>
+<body>
+    <!--Sites referencia-->
+    <details>
+        <summary>Sites de Referencia</summary>
+        <a target="_blank" href="https://www.w3schools.com/">w3schools</a> <br />
+        <a target="_blank" href="https://pt.lipsum.com/">Lipsum (Gerar textos em latim)</a><br />
+    </details>
+    <!--Trabalhanco com Textos(h)(p)-->
+    <details>
+        <summary>Trabalhando com textos (h)(p)</summary>
+        <div id="textos">
+            <h1>Isso é um titulo (h1).</h1>
+            <h2>Isso é um titulo (h2).</h2>
+            <h3>Isso é um titulo (h3).</h3>
+            <h4>Isso é um titulo (h4).</h4>
+            <h5>Isso é um titulo (h5).</h5>
+            <h6>Isso é um titulo (h6).</h6>
+        </div>
+        <br />
+        <div id="paragrafo">
+            <p>Isso é um paragrafo (p). </p>
+        </div>
+        <br />
+    </details>
+    <!--Trabalhanco com Links(a)-->
+    <details>
+        <summary>Trabalhando com links (a)</summary>
+        <div id="links">
+            <a href="https://google.com.br">Isso é um link de um site (atributo de link href=) + eu mudo a pagina.</a>
+            <br />
+            <a target="_blank" href="https://google.com.br"> Isso é um link mas (atributo de link href=) + eu abro outra pagina (target).</a>
+        </div>
+    </details>
+    <!--Trabalhanco com Imagens(img)-->
+    <details>
+        <summary>Trabalhando com imagens (img)</summary>
+        <div id="imagens">
+            <img src="photoExemple.jpeg" width="300" height="160"/>
+        </div>
+    </details>
+    <!--Trabalhanco com Divs(div)-->
+    <details>
+        <summary>Trabalhando com Divisoes (div)</summary>
+        <div>As div´s são declaradas apenas como (div).</div>
+    </details>
+    <!--Trabalhanco com Seções(section)-->
+    <details>
+        <summary>Trabalhando com Secões (section)</summary>
+        <section>
+            É um elemento pai (section).
+            <div>
+                É uma divisão dentro secao (div).
+            </div>
+        </section>
+    </details>
+    <!--Trabalhanco com menus (nav)-->
+    <details>
+        <summary>Trabalhando com menus (nav)</summary>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Pag1</a>
+            <a href="">Pag2</a>
+        </nav>
+        <br />
+        <!--utilizando lista ordenada-->
+        <nav>
+            <ul>
+                <li><a href="">Pagina Inicial</a></li>
+                <li><a href="">Pagina Produtos</a></li>
+                <li><a href="">Pagina Sobre</a></li>
+            </ul>
+        </nav>
+    </details>
+    <!--Trabalhanco com Cabecalho (header)-->
+    <details>
+        <summary>Trabalhando com Cabeçalho (header)</summary>
+        
+        <header>
+            O que ficar aqui dentro é o cabeçalho do site (header).
+        </header>
+        
+    </details>
+    <!--Trabalhanco com Rodapé (footer)-->
+    <details>
+        <summary>Trabalhando com Rodapé (footer)</summary>
+        
+        <footer><p><small>Todos os direitos reservados.</small></p></footer>
+        
+    </details>
+    <!--Trabalhanco com (Videos)-->
+    <details>
+        <summary>Trabalhando com Videos (video)</summary>
+
+        <video width="300" height="200" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Sou navegador não suporta esse video.
+        </video>
+    </details>
+    <!--Trabalhanco com (Audio)-->
+    <details>
+        <summary>Trabalhando com Audios (audio)</summary>
+
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse formato de audio.
+        </audio>
+    </details>
+    <!--Trabalhanco com (Iframe)-->
+    <details>
+        <summary>Trabalhando com Iframe (iframe)</summary>
+        <p>
+        Estou carregando um site dentro desta pagina
+    </p>
+    <br />
+        <iframe width="60%" height="300" src="https://lopesecia.com.br/ajuda"></iframe>
+    </details>
+    <!--Trabalhanco com (Formularios)-->
+    <details>
+        <summary>Trabalhando com Formularios (form)</summary>
+        <form>
+            <input required type="text" placeholder="Digite o seu nome..."/>
+            <br /> <!--tipo texto-->
+            <input required="" type="email" placeholder="Digite o seu e-mail..."/>
+            <br /> <!--tipo email-->
+            <textarea></textarea>
+            <br /> <!--tipo area de texto-->
+            <select>
+                <option>Item 1</option>
+                <option>Item 2</option>
+                <option>Item 3</option>
+            </select>
+            <br /> <!--tipo opcoes-->
+            <label>Opcao1</label>
+            <input name="opcao1" type="radio">
+            <label>Opcao2</label>
+            <input name="opcao2" type="radio">
+            <br /> <!--tipo radio c/label-->
+            <label>1º Opção</label>
+            <input type="checkbox" name="escolha1" value="escolha1" />
+            <label>2º Opção</label>
+            <input type="checkbox" name="escolha2" value="escolha2" />
+            <br /> <!--tipo check box c/label-->
+            <input type="button" value="Apenas um botao">
+            <br /> <!--tipo botão-->
+            <input type="submit" value="Enviar Formulario" />
+            <br /> <!--tipo botão c/ação de envir o formulario-->
+        </form>    
+    </details>
+    <!--Trabalhanco com (Tabelas)-->
+    <details>
+        <summary>Trabalhando com tabelas (table)</summary>
+        <table align="center" width="70%" border="2">
+            <!--Separa por linha-->
+            <tr> 
+                <!--Separa por coluna-->
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Cargo</td>
+            </tr>
+            <tr>
+                <td>Jonatha</td>
+                <td>29</td>
+                <td>Implantador</td>
+            </tr>
+        </table>
+        <br /> <!--Tabela 2 semanticamente correta-->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>IDADE</th>
+                    <th>CARGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>22</td>
+                    <td>Diretora.</td>
+                </tr>
+            </tbody>
+        </table> 
+    </details>
+    <!--Trabalhanco com meta tag SEO(meta)-->
+    <details>
+        <summary>Trabalhando com meta tag´s (meta)</summary>
+        
+            <h4>meta-tag´s</h4>
+                        <code>
+                        <head>
+
+                        <meta name="author" content="Andrea Santos" />
+
+                        <meta name="keywords" content="roupas,moda,beleza" />
+
+                        <meta name="description" content="Aqui vai a descrição do seu site! "/>
+
+
+                        <body>....
+
+                        <a href.... title="nome do seu link"> Home </a>
+                        <img src="tal.png" alt="descricao de imagem" title="descricao da imagem" /> 
+                        </code>       
+    </details>
+    
+    
+</body>
+</html>
