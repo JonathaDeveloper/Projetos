@@ -1,0 +1,279 @@
+#page{
+    display: block;
+    background-color: wheat;
+    margin: 2% 30% 1% 30%;
+    padding: 20px;
+    font-family:monospace;
+    font-size: 1.9em;
+    border-radius: 12px;
+    box-shadow: #333 1px 2px 3px;
+}
+/*
+#boxbox {
+    background-color: wheat;
+}
+*/
+
+/* Trabalhando com pesos em classes */
+#pesos {
+    background-color: #333;  
+  }
+  
+  /*Peso 1*/
+  
+  header {
+      color: blue;
+  }
+  
+  /*Peso 2*/
+  
+  .header1 {
+      color: coral;
+  }
+  
+  /*Peso 3*/
+  
+  header > p {
+      color: burlywood;
+  }
+  
+  /*Peso 4*/
+  
+  .header1 > p {
+      color: darkgreen;
+  }
+  
+  /*Peso 5*/
+  
+  header.header1 > p{
+      color: darkslateblue;
+  }
+
+  /*Peso 6*/
+  header.header1  p{
+    color: darkmagenta;
+}
+
+/*Peso "Gato"*/
+
+header.header1 > p{
+    color: darkslateblue !important;
+}
+/*Será exibido em blocos, um abaixo do outro */
+#blocos > .alinhadoemblocos_block p{
+    display: block;
+    font-size: 1.2em;
+    width: 100px;
+    height: 110px;
+    background-color: darkslategrey;
+    color: floralwhite;
+}
+/*Será exibido em linha sepada por blocos, um bloco ao lado do outro*/
+#blocos > .alinhadoemblocos_inline_block p {
+    display: inline-block;
+    font-size: 1.2em;
+    width: 160px;
+    height: 120px;
+    background-color:green;
+    color: bisque;
+}
+/*Será exibido em linha, um do lado do outro */
+#blocos > .alinhadoemblocos_inline p {
+    display: inline;
+    font-size: 1.2em;
+    width: 160px;
+    height: 120px;
+    background-color:rgb(20, 214, 20);
+    color: rgb(48, 38, 27);
+}
+
+/**/
+
+#v > .v1 {
+    display: block;
+    vertical-align: middle;
+    font-size: 0.6em;
+    background-color: blueviolet;
+    color: burlywood;
+    width: 100px;
+    height: 100px;
+}
+
+#v > .v2 {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 0.6em;
+    background-color: chocolate;
+    color: burlywood;
+    width: 100px;
+    height: 100px;
+}
+
+#m > .m1 {
+    width: 100%;
+    max-width: 600px;
+    background-color: blue;
+}
+
+#m > .m2 {
+    width: 100%;
+    min-width: 500px;
+    background-color: red;
+}
+
+#b > .box1{
+    width: 100px;
+    height: 100px;
+    background: gray;
+    display: inline-block;
+    margin: 20px /*Cima*/ 20px /*Direira*/ 20px /*Baixo*/ 20px /*esquerda*/;
+}
+
+#b > .box2{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    display: inline-block;
+    margin: 20px /*Cima*/ 20px /*Direira*/ 20px /*Baixo*/ 20px /*esquerda*/;
+}
+
+#bp > .pbox1{
+    box-sizing: border-box; /*Melhor para manipulação de padding*/
+    padding: 20px 20px;
+    display: inline-block;
+    background: coral;
+
+}
+
+#bp > .pbox2{
+    box-sizing: border-box; /*Melhor para manipulação de padding*/
+    padding-left: 30px;
+    padding-right: 10px;
+    display: inline-block;
+    background: hotpink;
+}
+
+#footer > .footer {
+    display: block;
+    background-color: wheat;
+    color: #333;
+    margin: 2% 30% 1% 30%;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: #333 1px 2px 3px;
+    text-align: center;
+}
+
+#ov > .classe1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#ov .classe1_filho{
+    height: 150px;
+    width: 200px;
+    background: darkseagreen;
+
+}
+
+#bk > .wallpaper{
+	width: 100%;
+	height: 300px;
+	background-color: gray;
+	background-repeat: no-repeat;
+	/*background-size: contain;*/
+	background-size: cover;
+	background-position: 10% 20%;
+	/*background-position: center;*/
+	background-image: url('../img/goku.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+#fontes > .fontes{
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.9em;
+}
+
+#ps > .pos1{
+    position: relative; /*posso manipular o local*/
+    height: 300px;
+    width: 400px;
+    background: brown;
+    left: 40%;
+}
+
+#ps > .pos2{
+    position: static; /*é a posicao normal*/
+    height: 300px;
+    width: 400px;
+    background: chartreuse;
+}
+
+#ps > .pos3{
+    position: absolute; /*é a posicao absoluta ao componente*/
+    height: 300px;
+    width: 400px;
+    background: cornflowerblue;
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.1em;
+}
+
+#op > .boxop{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#op > .boxop img{
+    height: 100%;
+    width: 100%;
+}
+
+#op > .overlay{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background: deeppink;
+    transform: translate(-50%,-50%) scale(1.3,1.3) rotate(35deg);
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: dimgrey 1px 2px 3px;
+}
+
+.clear{clear: both;} /*mostra o box"div" mesmo sendo conteudo flutuante*/
+
+#boxnav > .header{
+    background: hotpink;
+}
+
+#boxnav > .logo{
+    background: #333;
+    float: left;
+}
+
+#boxnav > nav{
+    background: lemonchiffon;
+    float: right;
+}
+
+
+#boxnav > ul{
+    list-style-position: inside; /* Não deixa o conteudo em lista em cima do outro*/
+}
+
+#boxnav > .boxnav{
+    background: royalblue;
+    margin: 30px 0;
+    padding: 90px 0;
+}
+
+#boxnav > .content{
+    float: left;
+    width: 33.3%;
+    height: 100px;
+    background: lightgreen;
+}
